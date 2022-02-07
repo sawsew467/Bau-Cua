@@ -12,13 +12,15 @@ html {
 
 .header {
     width: 100%;
-    height: 200px;
+    height: 350px;
     background-color: #B64935;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: url(../imgs/header.png) top center / cover no-repeat;
+    
 }
 
 .header .name {
@@ -69,14 +71,17 @@ img {
     border-radius: 20px;
     color: #fff;
     font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px #B64935;
+    transition: .3s;
 }
 
-.btn:hover {
-    cursor: pointer;
+.btn.active {
     background-color: #fff;
     border: 2px solid #B64935;
     color: #B64935;
     font-weight: bold;
+    box-shadow: 0px 0px 20px 0px #B64935;
 }
 
 footer {
